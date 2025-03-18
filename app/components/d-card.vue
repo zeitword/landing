@@ -15,8 +15,16 @@ const { icon, title, description, buttons } = defineProps<Props>();
 </script>
 
 <template>
-  <div class="p-5 border border-neutral flex-1 bg-neutral-subtle">
-    <h3>{{ title }}</h3>
-    <p>{{ description }}</p>
+  <div class="p-7 border border-neutral flex-1 text-neutral space-y-10">
+    <div
+      v-if="icon"
+      class="size-10 grid place-items-center border border-neutral"
+    >
+      <d-file-icon :name="icon" />
+    </div>
+    <div class="space-y-2">
+      <h3 class="text-copy-lg">{{ title }}</h3>
+      <p class="text-copy text-neutral-subtle">{{ description }}</p>
+    </div>
   </div>
 </template>
