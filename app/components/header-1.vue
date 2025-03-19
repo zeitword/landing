@@ -2,6 +2,7 @@
 type Props = {
   title: string;
   description: string;
+  buttons: TButton[];
 };
 
 const { title } = defineProps<Props>();

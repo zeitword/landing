@@ -1,9 +1,4 @@
 <script setup lang="ts">
-type TButton = {
-  text: string;
-  link: string;
-};
-
 type Props = {
   icon: string;
   title: string;

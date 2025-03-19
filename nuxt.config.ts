@@ -14,6 +14,6 @@ export default defineNuxtConfig({
     global: true,
     dirs: ["~/components"],
   },
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   modules: ["@nuxt/fonts", "@nuxt/image"],
 });
