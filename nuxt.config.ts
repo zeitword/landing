@@ -38,6 +38,13 @@ export default defineNuxtConfig({
           media: "(prefers-color-scheme: light)",
         },
       ],
+      script: [
+        {
+          defer: true,
+          "data-domain": "zeitword.com",
+          src: "https://plausible.io/js/script.js",
+        },
+      ],
     },
   },
 });
