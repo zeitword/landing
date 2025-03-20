@@ -20,6 +20,10 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Zeitword",
+      meta: [
+        { property: "og:image", content: "/og-image.png" },
+        { property: "twitter:image", content: "/og-image.png" },
+      ],
       link: [
         {
           rel: "icon",
