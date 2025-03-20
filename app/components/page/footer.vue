@@ -9,12 +9,10 @@
       <div>
         <nav class="flex items-center gap-4 text-neutral text-copy">
           <p>
-            <NuxtLink to="/impressum" target="_blank" class="underline"
-              >Imprint</NuxtLink
-            >
+            <NuxtLink to="/impressum" class="underline">Imprint</NuxtLink>
           </p>
           <p>
-            <NuxtLink to="/datenschutz" target="_blank" class="underline"
+            <NuxtLink to="/datenschutz" class="underline"
               >Privacy Policy</NuxtLink
             >
           </p>
