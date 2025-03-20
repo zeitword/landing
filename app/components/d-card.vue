@@ -43,8 +43,8 @@ const maskStyle = computed(() => {
       color="#ffffff"
       :max-opacity="1"
       :flicker-chance="0.1"
-      :width="800"
-      :height="800"
+      :width="1200"
+      :height="500"
     />
     <div class="z-10 relative space-y-10">
       <div
