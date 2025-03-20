@@ -2,7 +2,7 @@
 type Props = {
   title: string;
   description: string;
-  buttons: TButton[];
+  buttons?: TButton[];
 };
 
 const { title } = defineProps<Props>();
@@ -11,9 +11,9 @@ const { title } = defineProps<Props>();
 <template>
   <d-wrapper>
     <div
-      class="text-center py-40 max-w-5xl mx-auto flex flex-col gap-2 text-neutral"
+      class="text-center py-40 max-w-xl mx-auto flex flex-col gap-2 text-neutral"
     >
-      <h1 class="text-5xl">
+      <h1 class="text-7xl">
         {{ title }}
       </h1>
       <p class="text-neutral-subtle">{{ description }}</p>
