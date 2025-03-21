@@ -20,7 +20,7 @@ async function handleSubmit() {
   isLoading.value = true;
   error.value = "";
 
-  const url = "http://localhost:3001/api/public/waitlist";
+  const url = "https://app.zeitword.com/api/public/waitlist";
   const options = {
     method: "POST",
     headers: {
