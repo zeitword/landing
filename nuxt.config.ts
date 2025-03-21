@@ -21,8 +21,35 @@ export default defineNuxtConfig({
     head: {
       title: "Zeitword",
       meta: [
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        {
+          name: "description",
+          content:
+            "The open-source, block based, headless CMS built for developer productivity and content creator joy.",
+        },
+
+        // OpenGraph
+        { property: "og:title", content: "Zeitword" },
+        {
+          property: "og:description",
+          content:
+            "The open-source, block based, headless CMS built for developer productivity and content creator joy.",
+        },
+        { property: "og:type", content: "website" },
+        { property: "og:url", content: "https://zeitword.com" },
         { property: "og:image", content: "/og-image.png" },
-        { property: "twitter:image", content: "/og-image.png" },
+
+        // Twitter
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: "Zeitword" },
+        {
+          name: "twitter:description",
+          content:
+            "The open-source, block based, headless CMS built for developer productivity and content creator joy.",
+        },
+        { name: "twitter:image", content: "/og-image.png" },
+        { name: "twitter:site", content: "@zeitword" },
       ],
       link: [
         {
