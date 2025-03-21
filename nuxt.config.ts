@@ -38,7 +38,7 @@ export default defineNuxtConfig({
         },
         { property: "og:type", content: "website" },
         { property: "og:url", content: "https://zeitword.com" },
-        { property: "og:image", content: "/og-image.png" },
+        { property: "og:image", content: "https://zeitword.com/og-image.png" },
 
         // Twitter
         { name: "twitter:card", content: "summary_large_image" },
@@ -48,7 +48,7 @@ export default defineNuxtConfig({
           content:
             "The open-source, block based, headless CMS built for developer productivity and content creator joy.",
         },
-        { name: "twitter:image", content: "/og-image.png" },
+        { name: "twitter:image", content: "https://zeitword.com/og-image.png" },
         { name: "twitter:site", content: "@zeitword" },
       ],
       link: [
