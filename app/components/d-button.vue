@@ -52,7 +52,7 @@ const heightClasses: { [key: string]: string } = {
   xs: "h-6",
   sm: "h-7",
   md: "h-8",
-  lg: "h-9",
+  lg: "h-11",
 };
 
 const widthClasses: { [key: string]: string } = {
@@ -76,7 +76,7 @@ const sizeClass = computed(() => {
     :is="to ? RouterLink : 'button'"
     :type
     :to
-    class="relative inline-flex cursor-default items-center justify-center gap-2 rounded-lg text-sm text-nowrap ring-blue-600 outline-none select-none focus-visible:ring-2 focus-visible:ring-offset-2"
+    class="relative inline-flex cursor-default items-center justify-center gap-2 rounded-full text-sm text-nowrap ring-blue-600 outline-none select-none focus-visible:ring-2 focus-visible:ring-offset-2"
     :class="[
       sizeClass,
       variantClasses[variant],
