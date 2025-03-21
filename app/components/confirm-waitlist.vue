@@ -8,7 +8,7 @@ const isConfirmed = ref(false);
 onMounted(async () => {
   try {
     const response = await fetch(
-      `http://app.zeitword.com/api/public/waitlist/confirm/${token}`,
+      `https://app.zeitword.com/api/public/waitlist/confirm/${token}`,
       {
         method: "GET",
         headers: {
