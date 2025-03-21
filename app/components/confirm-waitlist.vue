@@ -49,8 +49,10 @@ onMounted(async () => {
       </div>
 
       <div v-else-if="isConfirmed" class="mt-4">
-        <p class="font-medium text-green-600">Your email has been confirmed!</p>
-        <p class="text-neutral-subtle mt-2">
+        <p class="font-medium text-copy-lg text-neutral">
+          Your email has been confirmed!
+        </p>
+        <p class="text-neutral-subtle text-copy">
           We'll let you know when Zeitword is ready.
         </p>
       </div>
