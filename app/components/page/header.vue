@@ -8,7 +8,7 @@
       </NuxtLink>
       <div>
         <nav class="flex items-center gap-1 text-neutral text-copy">
-          <!-- <p>
+          <p>
             Star us on
             <NuxtLink
               to="https://github.com/zeitword/zeitword"
@@ -16,9 +16,9 @@
               class="underline"
               >GitHub</NuxtLink
             >
-          </p> -->
+          </p>
           <p>
-            Follow us on
+            and follow on
             <NuxtLink
               to="https://x.com/zeitword"
               target="_blank"
