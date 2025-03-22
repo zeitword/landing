@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { LoaderCircleIcon } from "lucide-vue-next";
-import { RouterLink } from "vue-router";
+import { NuxtLink } from "#components";
 
 const slots = useSlots();
 
@@ -13,7 +13,7 @@ interface Props {
     | "transparent"
     | "outline";
   iconLeft?: Component;
-  to?: any;
+  to?: string;
   size?: "xs" | "sm" | "md" | "lg";
   type?: "submit" | "button";
   loading?: boolean;
@@ -73,7 +73,7 @@ const sizeClass = computed(() => {
 
 <template>
   <component
-    :is="to ? RouterLink : 'button'"
+    :is="to ? NuxtLink : 'button'"
     :type
     :to
     class="relative inline-flex cursor-default items-center justify-center gap-2 rounded-full text-sm text-nowrap ring-blue-600 outline-none select-none focus-visible:ring-2 focus-visible:ring-offset-2"
